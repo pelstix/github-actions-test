@@ -10,8 +10,8 @@ on:
      
    #push:
 
-   pull_request:
-     types: [closed,assigned,opened,reassigned]
+  pull_request:
+    types: [closed,assigned,opened,reassigned]
 
 jobs:
   run-github-actions:
