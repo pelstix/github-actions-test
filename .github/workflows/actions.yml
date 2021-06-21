@@ -1,8 +1,8 @@
 name: Actions Worflow
 
 on: 
-   repository_dispatch:
-     types: [build]
+   schedule:
+     - cron: "0/5 * * * *"
      
    #push:
 
