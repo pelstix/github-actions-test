@@ -8,7 +8,7 @@ jobs:
       - name : dump
         run: |
          echo ${{format('Hello {0} {1} {2}', 'World', '!' , '!')}}
-         echo ${{join ('Bread',',')}}
+         echo ${{join ('Bread','/')}}
   one:
     runs-on: ubuntu-latest
     steps:
