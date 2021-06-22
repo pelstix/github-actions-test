@@ -1,0 +1,14 @@
+name : matrix
+
+jobs:
+  node-version:
+    runs-on : ubuntu-latest
+    steps:
+      - name : Node version
+        run :  node -v
+      - uses:  action/setup-node@v1
+        with:  
+          node-version: 6
+      - name : Node version 2
+        run :  node -v
+        
