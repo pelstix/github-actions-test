@@ -2,6 +2,12 @@ name: Context
 on: push
 
 jobs:
+  functions:
+    runs-on: ubuntu-latest
+    steps:
+      - name : dump
+        run: |
+         echo ${{format('Hello' {1} {2} {3},'World' ! !)}}
   one:
     runs-on: ubuntu-latest
     steps:
