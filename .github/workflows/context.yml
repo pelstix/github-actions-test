@@ -7,7 +7,7 @@ jobs:
     steps:
       - name : dump
         run: |
-         echo ${{format('Hello {1} {2} {3}', 'World', '!' , '!')}}
+         echo ${{format('Hello {0} {1} {2}', 'World', '!' , '!')}}
   one:
     runs-on: ubuntu-latest
     steps:
